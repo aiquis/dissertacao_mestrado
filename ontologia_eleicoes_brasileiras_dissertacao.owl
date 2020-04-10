@@ -9,7 +9,15 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:eleicoesbrasil="http://www.semanticweb.org/aiqui/ontologies/2019/01/eleicoesbrasil#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/aiqui/ontologies/2019/1/eleicoesbrasil"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aiqui/ontologies/2019/1/eleicoesbrasil">
+        <rdfs:seeAlso rdf:resource="http://www.tse.jus.br/o-tse/cultura-e-historia/biblioteca/tesauro-da-justica-eleitoral"/>
+        <rdfs:comment>A Ontologia das Eleições Brasileiras tem como objetivo ser um modelo semântico para representação de uma eleição no Brasil.
+
+Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs:seeAlso para enriquecimento do conhecimento aqui representado.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://vocab.e.gov.br/2011/03/vcge"/>
+        <rdfs:seeAlso rdf:resource="http://www.tse.jus.br/eleitor/glossario/glossario-eleitoral"/>
+        <rdfs:seeAlso rdf:resource="http://legis.senado.gov.br/webthes/"/>
+    </owl:Ontology>
     
 
 
