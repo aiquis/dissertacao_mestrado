@@ -32,6 +32,12 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#sameAs -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
@@ -481,10 +487,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
     <!-- http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#Eleicao -->
 
     <owl:Class rdf:about="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#Eleicao">
-        <owl:sameAs>http://dati.camera.it/ocd/elezione</owl:sameAs>
-        <owl:sameAs>http://dbpedia.org/ontology/Election</owl:sameAs>
-        <owl:sameAs>http://parliament.uk/ontologies/election/Election</owl:sameAs>
-        <owl:sameAs>http://www.bbc.co.uk/ontologies/politics/Election</owl:sameAs>
+        <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Election"/>
     </owl:Class>
     
 
@@ -517,9 +520,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
                 <owl:someValuesFrom rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#Eleicao"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:sameAs>http://dbpedia.org/ontology/PoliticalParty</owl:sameAs>
-        <owl:sameAs>http://parliament.uk/ontologies/election/Party</owl:sameAs>
-        <owl:sameAs>http://www.bbc.co.uk/ontologies/politics/PoliticalParty</owl:sameAs>
+        <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/PoliticalParty"/>
     </owl:Class>
     
 
@@ -1056,6 +1057,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
 
     <owl:NamedIndividual rdf:about="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#PRESIDENTE">
         <rdf:type rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#CargoPolitico"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Presidente_do_Brasil"/>
         <disputadoAtravesDeEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#295_ELEIÇÃOGERALFEDERAL2018"/>
         <disputadoEmUnidadeEleitoral rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#BRASIL"/>
         <temCodigoCargo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</temCodigoCargo>
@@ -1111,6 +1113,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
         <rdf:type rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#Partido"/>
         <disputaEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#295_ELEIÇÃOGERALFEDERAL2018"/>
         <formaColigacao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#VAMOSSEMMEDODEMUDAROBRASIL"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Partido_Socialismo_e_Liberdade"/>
     </owl:NamedIndividual>
     
 
@@ -1132,6 +1135,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
         <disputaEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#295_ELEIÇÃOGERALFEDERAL2018"/>
         <disputaEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#296_ELEIÇÃOGERALFEDERAL2018"/>
         <formaColigacao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#OPOVOFELIZDENOVO"/>
+        <owl:sameAs>http://dbpedia.org/page/Workers&apos;_Party_(Brazil)</owl:sameAs>
     </owl:NamedIndividual>
     
 
@@ -4304,6 +4308,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
 
     <owl:NamedIndividual rdf:about="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#280000601016">
         <rdf:type rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#Candidato"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Guilherme_Boulos"/>
         <declaraBem rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#280000601016_21"/>
         <declaraFonteDeReceita rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#280000601016_12085357"/>
         <declaraFonteDeReceita rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#280000601016_12085358"/>
@@ -15258,6 +15263,7 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
         <temQuantidadeDeVotosPrimeiroTurno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31342051</temQuantidadeDeVotosPrimeiroTurno>
         <temQuantidadeDeVotosSegundoTurno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47040906</temQuantidadeDeVotosSegundoTurno>
         <temSituacaoCandidatura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APTO</temSituacaoCandidatura>
+        <owl:sameAs>http://dbpedia.org/page/Fernando_Haddad</owl:sameAs>
     </owl:NamedIndividual>
     
 
@@ -16937,6 +16943,18 @@ Alguns Recursos Não-Ontológicos estão listados utilizando a proprieddade rdfs
         <disputaEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#295_ELEIÇÃOGERALFEDERAL2018"/>
         <disputaEleicao rdf:resource="http://localhost:8080/dissertacao_mestrado/ontologia_eleicoes_brasileiras_dissertacao.rdf#296_ELEIÇÃOGERALFEDERAL2018"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Guilherme_Boulos -->
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Guilherme_Boulos"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Presidente_do_Brasil -->
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Presidente_do_Brasil"/>
     
 
 
